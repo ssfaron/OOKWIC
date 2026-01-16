@@ -6,11 +6,11 @@ public class Filter {
 
     public static String selectKeywords(String title, List<String> omissions){
 
-        // break title up into words
+        // break title up into individual words
         String[] splitTitle = title.split(" ");
         List<String> titleWords = new ArrayList<>(Arrays.asList(splitTitle));
 
-        // remove insignificant words
+        // remove words in omissions list and keep keywords
         List<String> keyTitleWords = new ArrayList<String>();
         for(String word : titleWords){
             if(omissions.contains(word) || omissions.contains(word.toLowerCase())){
@@ -20,6 +20,7 @@ public class Filter {
             }
         }
 
+        // rejoin keywords into one string
         String filteredTitle = String.join(" ", keyTitleWords);
 
         // return keywords

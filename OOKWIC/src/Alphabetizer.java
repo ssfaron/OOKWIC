@@ -11,10 +11,10 @@ public class Alphabetizer {
         allProcessedTitles.addAll(filteredTitles);
         allProcessedTitles.addAll(allShiftedTitles);
 
-        // sort the input in alphabetical order
+        // sort the list of all filtered+shifted titles in alphabetical order
         Collections.sort(allProcessedTitles);
 
-        // output: list of alphabetized lines
+        // output list of alphabetized lines
         return allProcessedTitles;
     }
 }

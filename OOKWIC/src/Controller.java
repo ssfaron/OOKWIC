@@ -9,15 +9,17 @@ public class Controller {
         List<String> titles = new ArrayList<String>();
         List<String> omissions = new ArrayList<String>();
 
-        // REMOVE THIS //
+        // select some titles to shift
         titles.add("Of Mice and Men");
         titles.add("Great Expectations");
         titles.add("The Great Gatsby");
+        titles.add("Frankenstein");
+        titles.add("Brave New World");
 
+        // select some insignificant words to omit
         omissions.add("of");
         omissions.add("and");
         omissions.add("the");
-        // REMOVE THIS //
 
         // filter inputs
         Filter filter = new Filter();
